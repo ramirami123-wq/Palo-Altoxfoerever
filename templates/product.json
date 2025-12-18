@@ -327,14 +327,14 @@
         "enable_mobile_height": true,
         "mobile_height": "four-fifty-height-mobile",
         "text_position": "middle-center",
-        "video_link_bg": "https://youtu.be/GpOCfrOQj7M?si=Oxru548asKXHufW5",
+        "video_link_bg": "",
         "video_link": "https://youtu.be/GpOCfrOQj7M?si=Oxru548asKXHufW5",
         "image": "shopify://shop_images/product_1_x_2048x2048_b5ff5117-7b9c-45d9-9a0c-049e3d949003.png",
         "overlay_opacity": 10,
         "text_color": "text-light",
         "title": "<h2>How To Use Our Hand Casting Kit</h2>",
         "heading_highlight_type": "underline-hand-drawn",
-        "highlight_color": "#000",
+        "highlight_color": "#000000",
         "highlight_text_color": "",
         "text": "",
         "heading_size": 100,
@@ -344,6 +344,29 @@
         "button_style": "btn--solid-border",
         "button_size": "btn--small"
       }
+    },
+    "17660885504cc95c9a": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_fGNiXP": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_fGNiXP"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -352,6 +375,7 @@
     "section_multicolumn_9JBrTT",
     "related",
     "section_accordions_QgJwaJ",
-    "section_video_WbdK33"
+    "section_video_WbdK33",
+    "17660885504cc95c9a"
   ]
 }
