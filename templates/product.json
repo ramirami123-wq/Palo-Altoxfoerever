@@ -117,7 +117,10 @@
         "upsell": {
           "type": "upsell",
           "settings": {
-            "product_list": [],
+            "product_list": [
+              "wooden-base",
+              "wooden-base-round"
+            ],
             "padding_bottom": 20
           }
         }
