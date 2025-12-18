@@ -180,6 +180,66 @@
         "padding_bottom": 60
       }
     },
+    "section_multicolumn_9JBrTT": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "image_f3PjkN": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify://shop_images/image_carousel_1_text.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 0.8,
+            "title": "Fantastic fun gift idea.",
+            "heading_size": 190,
+            "text": "<p>Our kit includes everything you need to create your own unique sculpture. Guaranteed great gift to surprise and delight everyone!</p>",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_ndwjw6": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify://shop_images/image_carousel_3_c074fab9-87e6-40d1-bbc8-a65caa5ade1f.png",
+            "aspect_ratio_desktop": 1.2,
+            "aspect_ratio_mobile": 0.8,
+            "title": "Amazingly detailed.",
+            "heading_size": 120,
+            "text": "<p>Thanks to our unique formula, the alginate powder captures every detail of your hands. It can even safely mold jewelry and rings.</p>",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "image_f3PjkN",
+        "image_ndwjw6"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "text_size": 100,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "bg_color": "",
+        "text_color": "text-dark",
+        "layout_mobile": "carousel",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "related": {
       "type": "related-products",
       "blocks": {
@@ -271,11 +331,43 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "section_image_with_text_8Ec4Vc": {
+      "type": "section-image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "section_height": "six-fifty-height",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "standard",
+        "subheading": "",
+        "title": "<p>Everything's on sale</p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000",
+        "highlight_text_color": "",
+        "heading_size": 130,
+        "content": "<p>Share details about a promotion, welcome customers, describe a product, or talk about your brand.</p>",
+        "text_alignment": "left",
+        "button_text": "Button text",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "#d02e2e",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "main",
     "section_image_with_text_cENwFf",
+    "section_multicolumn_9JBrTT",
+    "section_image_with_text_8Ec4Vc",
     "related",
     "icons"
   ]
