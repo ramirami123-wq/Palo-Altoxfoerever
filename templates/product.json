@@ -161,7 +161,7 @@
         "subheading": "",
         "title": "<p>Create unforgettable and unique love gift.</p>",
         "heading_highlight_type": "underline-hand-drawn",
-        "highlight_color": "#000",
+        "highlight_color": "#000000",
         "highlight_text_color": "",
         "heading_size": 130,
         "content": "<p>Making and creating sculptures is guaranteed to be a great fun activity for everyone. A great way to make the moment unforgettable for any occasion.</p>",
@@ -274,90 +274,47 @@
         "padding_bottom": 60
       }
     },
-    "icons": {
-      "type": "section-icons-row",
+    "section_accordions_QgJwaJ": {
+      "type": "section-accordions",
       "blocks": {
-        "icon-0": {
+        "text_cHdXnY": {
           "type": "text",
           "settings": {
-            "icon_name": "truck",
-            "title": "Free Shipping",
-            "text": "<p>on all order over $99</p>"
+            "title": "How easy is it to make?",
+            "text": "<p><strong>It is really really easy and simple.You can create your hand sculpture in just a few simple steps with the help of our instructions book.Besides the kit, all you need is water and a mixing tool.</strong></p>"
           }
         },
-        "icon-1": {
+        "text_GymYAU": {
           "type": "text",
           "settings": {
-            "icon_name": "check",
-            "title": "Free Returns",
-            "text": "<p>within 30 days of purchase</p>"
+            "title": "How many people can make it together?",
+            "text": "<p><strong>With the Couple Kit - two people can make it. Plus a kid hand also fits there.With the Family Kit - maximum four people can make it. Even a kid hand fits there.</strong></p>"
           }
         },
-        "icon-2": {
+        "text_dtzGWt": {
           "type": "text",
           "settings": {
-            "icon_name": "eco-friendly",
-            "title": "1% Donated Annually",
-            "text": "<p>to forest conservation</p>"
+            "title": "What if it doesn't work on the first try?",
+            "text": "<p><strong>Don't worry anything.</strong></p><p><strong>98% is the success rate of the making the sculptures.If even so you have a problem just contact us and we will help you.</strong></p>"
           }
         }
       },
       "block_order": [
-        "icon-0",
-        "icon-1",
-        "icon-2"
+        "text_cHdXnY",
+        "text_GymYAU",
+        "text_dtzGWt"
       ],
+      "name": "Tabs",
       "settings": {
-        "heading": "",
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Frequently Asked Questions",
         "subheading": "",
-        "alignment": "center",
-        "columns": 3,
-        "icons_width": 30,
-        "show_vertical_borders": true,
-        "show_horizontal_borders": true,
-        "heading_size": 120,
-        "text_size": 100,
-        "bg_color": "",
-        "text_color": "#333333",
-        "box_color": "",
-        "color_border": "#333333",
-        "button_text": "",
-        "button_link": "",
-        "button_color": "btn--black",
-        "button_style": "btn--solid",
-        "button_size": "btn--small",
-        "layout_mobile": "grid",
-        "width": "wrapper",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "section_image_with_text_8Ec4Vc": {
-      "type": "section-image-with-text",
-      "name": "Image with text",
-      "settings": {
-        "section_height": "six-fifty-height",
-        "layout": "inline",
-        "image_location": "left",
-        "image_width": "standard",
-        "subheading": "",
-        "title": "<p>Everything's on sale</p>",
-        "heading_highlight_type": "underline-hand-drawn",
-        "highlight_color": "#000",
-        "highlight_text_color": "",
-        "heading_size": 130,
-        "content": "<p>Share details about a promotion, welcome customers, describe a product, or talk about your brand.</p>",
-        "text_alignment": "left",
-        "button_text": "Button text",
-        "button_link": "",
-        "button_color": "btn--black",
-        "button_style": "btn--solid",
-        "button_size": "btn--small",
-        "video_link": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
         "text_color": "text-dark",
-        "bg_color": "#d02e2e",
-        "gradient": "",
-        "section_width": "wrapper",
+        "width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -367,8 +324,7 @@
     "main",
     "section_image_with_text_cENwFf",
     "section_multicolumn_9JBrTT",
-    "section_image_with_text_8Ec4Vc",
     "related",
-    "icons"
+    "section_accordions_QgJwaJ"
   ]
 }
