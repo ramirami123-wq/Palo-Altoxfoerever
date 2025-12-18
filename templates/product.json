@@ -22,11 +22,32 @@
             "padding_bottom": 20
           }
         },
+        "divider_KAAtyA": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 20
+          }
+        },
         "inventory_countdown": {
           "type": "inventory_countdown",
           "settings": {
             "max_inventory": 2,
             "hide_inventory_count": true,
+            "padding_bottom": 20
+          }
+        },
+        "icon_TBWfLM": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "package",
+            "icon_color": "",
+            "icon_width": 20,
+            "icon_text": "2.000+ bought in the past month",
+            "text_size": 80,
+            "width": "full",
+            "text_alignment": "left",
+            "bg_color": "",
             "padding_bottom": 20
           }
         },
@@ -37,6 +58,13 @@
             "show_quantity": false,
             "show_payment_button": true,
             "enable_subscriptions_selectors": false,
+            "padding_bottom": 38
+          }
+        },
+        "divider_3LfpqG": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
             "padding_bottom": 20
           }
         },
@@ -103,8 +131,11 @@
       },
       "block_order": [
         "title",
+        "divider_KAAtyA",
         "inventory_countdown",
+        "icon_TBWfLM",
         "form",
+        "divider_3LfpqG",
         "description",
         "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
         "product_accordion",
