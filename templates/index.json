@@ -16,13 +16,13 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/product_1_x.webp",
-            "overlay_opacity": 10,
-            "text_width": "narrow",
+            "overlay_opacity": 25,
+            "text_width": "wide",
             "text_position": "center",
             "text_alignment": "text-center",
             "text_color": "text-light",
             "subheading": "",
-            "title": "<p>Unique gift ideas, creative activities.</p>",
+            "title": "<h4>Unique gift ideas, creative activities.</h4>",
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#ffffff",
             "highlight_text_color": "#ffffff",
@@ -162,7 +162,7 @@
         "product_nXGDaD": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "hand-casting-kit-kids",
             "title": "",
             "product_description": "",
             "button_text": "View Product",
