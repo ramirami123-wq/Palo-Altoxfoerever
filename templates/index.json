@@ -61,9 +61,168 @@
         "increase_border_radius": true,
         "heading_size": 160
       }
+    },
+    "section_multicolumn_Px4N39": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "image_WLY4Wc": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify://shop_images/image_carousel_1_text.png",
+            "aspect_ratio_desktop": 1.2,
+            "aspect_ratio_mobile": 1,
+            "title": "Fantastic fun gift idea.",
+            "heading_size": 200,
+            "text": "<p>Our kit includes everything you need to create your own unique sculpture. Guaranteed great gift to surprise and delight everyone!</p>",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_HRkU7G": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify://shop_images/image_carousel_1_text.png",
+            "aspect_ratio_desktop": 1.2,
+            "aspect_ratio_mobile": 1,
+            "title": "Amazingly detailed.",
+            "heading_size": 120,
+            "text": "<p>Thanks to our unique formula, the alginate powder captures every detail of your hands. It can even safely mold jewelry and rings.</p>",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "image_WLY4Wc",
+        "image_HRkU7G"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "text_size": 100,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "bg_color": "",
+        "text_color": "text-dark",
+        "layout_mobile": "stacked",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_products_list_Kdbbkk": {
+      "type": "section-products-list",
+      "blocks": {
+        "product_KDdAYg": {
+          "type": "product",
+          "settings": {
+            "product": "hand-casting-kit-family",
+            "title": "",
+            "product_description": "",
+            "button_text": "View Product",
+            "show_second_image": true,
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "New Arrival ~ New Arrival ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        },
+        "product_BFDgji": {
+          "type": "product",
+          "settings": {
+            "product": "hand-casting-kit",
+            "title": "",
+            "product_description": "",
+            "button_text": "View Product",
+            "show_second_image": true,
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "New Arrival ~ New Arrival ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        },
+        "product_nXGDaD": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "title": "",
+            "product_description": "",
+            "button_text": "View Product",
+            "show_second_image": true,
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "New Arrival ~ New Arrival ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        }
+      },
+      "block_order": [
+        "product_KDdAYg",
+        "product_BFDgji",
+        "product_nXGDaD"
+      ],
+      "name": "Products list",
+      "settings": {
+        "title": "",
+        "heading_size": 100,
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "image_aspect_ratio": 1,
+        "bg_color_secondary": false,
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "17661604754a3f054e": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_8V3JMX": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "",
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_8V3JMX"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
-    "section-slideshow-0"
+    "section-slideshow-0",
+    "section_multicolumn_Px4N39",
+    "section_products_list_Kdbbkk",
+    "17661604754a3f054e"
   ]
 }
