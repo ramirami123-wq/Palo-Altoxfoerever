@@ -284,29 +284,37 @@
         "text_cHdXnY": {
           "type": "text",
           "settings": {
-            "title": "How easy is it to make?",
-            "text": "<p><strong>It is really really easy and simple.You can create your hand sculpture in just a few simple steps with the help of our instructions book.Besides the kit, all you need is water and a mixing tool.</strong></p>"
+            "title": "What age is this kit best for?",
+            "text": "<p>This kit is best for babies aged <strong>0–3 years</strong>. It’s specially designed to capture tiny hands and feet during your baby’s earliest and most precious months.</p>"
           }
         },
         "text_GymYAU": {
           "type": "text",
           "settings": {
-            "title": "How many people can make it together?",
-            "text": "<p><strong>With the Couple Kit - two people can make it. Plus a kid hand also fits there.With the Family Kit - maximum four people can make it. Even a kid hand fits there.</strong></p>"
+            "title": "Is it safe for my baby’s skin?",
+            "text": "<p>Yes. The casting materials are <strong>100% baby-safe, non-toxic, and gentle on sensitive skin</strong>. They are commonly used for baby keepsakes and do not cause irritation or discomfort.</p>"
           }
         },
         "text_dtzGWt": {
           "type": "text",
           "settings": {
-            "title": "What if it doesn't work on the first try?",
-            "text": "<p><strong>Don't worry anything.</strong></p><p><strong>98% is the success rate of the making the sculptures.If even so you have a problem just contact us and we will help you.</strong></p>"
+            "title": "How long does the whole process take?",
+            "text": "<p>The full process takes around <strong>20–30 minutes</strong>, including preparation and molding. The casting itself is quick, and the final result sets naturally afterward.</p>"
+          }
+        },
+        "text_VBBVXY": {
+          "type": "text",
+          "settings": {
+            "title": "What’s included in the kit?",
+            "text": "<p>Each kit includes everything you need:</p><ul><li>Baby-safe molding powder<br/></li><li>Casting material<br/></li><li>Mixing container<br/></li><li>Step-by-step instructions<br/></li></ul><p>No extra tools required.</p>"
           }
         }
       },
       "block_order": [
         "text_cHdXnY",
         "text_GymYAU",
-        "text_dtzGWt"
+        "text_dtzGWt",
+        "text_VBBVXY"
       ],
       "name": "Tabs",
       "settings": {
