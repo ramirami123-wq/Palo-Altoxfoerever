@@ -154,6 +154,7 @@
     },
     "section_image_with_text_cENwFf": {
       "type": "section-image-with-text",
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "section_height": "six-fifty-height",
