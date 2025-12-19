@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
@@ -5,15 +14,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-block-0": {
-          "type": "text",
-          "settings": {
-            "alignment": "text-left",
-            "title": "Our Mission",
-            "footer_text": "<p>Leave your customers with a final message about your brand in this rich text block.</p>",
-            "column_width": "20"
-          }
-        },
         "footer-block-1": {
           "type": "divider",
           "settings": {
@@ -27,15 +27,6 @@
             "alignment": "text-left",
             "menu": "main-menu",
             "title": "Shop",
-            "column_width": "15"
-          }
-        },
-        "footer-block-3": {
-          "type": "link",
-          "settings": {
-            "alignment": "text-left",
-            "menu": "footer",
-            "title": "Helpful Links",
             "column_width": "15"
           }
         },
@@ -55,10 +46,8 @@
         }
       },
       "block_order": [
-        "footer-block-0",
         "footer-block-1",
         "footer-block-2",
-        "footer-block-3",
         "footer-block-4"
       ],
       "settings": {
@@ -66,9 +55,10 @@
         "enable_footer_parallax": true,
         "increase_border_radius": true,
         "bottom_bar_alignment": "text-left",
-        "show_social_links": true,
-        "enable_follow_on_shop": true,
-        "show_payment_icons": true,
+        "show_social_links": false,
+        "enable_follow_on_shop": false,
+        "show_payment_icons": false,
+        "enable_greyscale": false,
         "bottom_menu": "",
         "color_text": "#ffffff",
         "color_bg": "#000000",
