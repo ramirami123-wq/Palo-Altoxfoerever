@@ -51,6 +51,16 @@
             "padding_bottom": 20
           }
         },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "product_list": [
+              "wooden-base",
+              "wooden-base-round"
+            ],
+            "padding_bottom": 20
+          }
+        },
         "form": {
           "type": "form",
           "settings": {
@@ -113,16 +123,6 @@
             "accordion_page": "",
             "padding_bottom": 20
           }
-        },
-        "upsell": {
-          "type": "upsell",
-          "settings": {
-            "product_list": [
-              "wooden-base",
-              "wooden-base-round"
-            ],
-            "padding_bottom": 20
-          }
         }
       },
       "block_order": [
@@ -130,14 +130,14 @@
         "divider_KAAtyA",
         "inventory_countdown",
         "icon_TBWfLM",
+        "upsell",
         "form",
         "divider_3LfpqG",
         "description",
         "custom_code_PdNTmD",
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
         "product_accordion_8DPBwX",
-        "product_accordion_hiKrDr",
-        "upsell"
+        "product_accordion_hiKrDr"
       ],
       "settings": {
         "product_sticky_enable": true,
