@@ -53,6 +53,7 @@
         },
         "upsell": {
           "type": "upsell",
+          "disabled": true,
           "settings": {
             "product_list": [
               "wooden-base",
