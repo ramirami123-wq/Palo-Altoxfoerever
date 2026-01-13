@@ -123,6 +123,15 @@
             "accordion_page": "",
             "padding_bottom": 20
           }
+        },
+        "seedgrow_whatsapp_chat_app_block_xqb6bH": {
+          "type": "shopify://apps/seedgrow-whatsapp-chat/blocks/app-block/b85b5e45-9cea-417a-9b9e-0aa961ccf3ef",
+          "settings": {
+            "button_label": "Need help? Chat with us",
+            "button_style": "round",
+            "background_color": "#2DB742",
+            "text_color": "#ffffff"
+          }
         }
       },
       "block_order": [
@@ -137,7 +146,8 @@
         "custom_code_PdNTmD",
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
         "product_accordion_8DPBwX",
-        "product_accordion_hiKrDr"
+        "product_accordion_hiKrDr",
+        "seedgrow_whatsapp_chat_app_block_xqb6bH"
       ],
       "settings": {
         "product_sticky_enable": true,
