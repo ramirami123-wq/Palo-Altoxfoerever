@@ -496,6 +496,51 @@
         "padding_bottom": 60
       }
     },
+    "section_marquee_zRq6jc": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_gUjXNW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>VALENTINE OFFER 25% OFF + DELIVERY</p>",
+            "text_color": "#ffffff",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "#d43747",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_gUjXNW"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 120,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#d43747",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "ss_comparison_table_2_kg9Xch": {
       "type": "ss-comparison-table-2",
       "blocks": {
@@ -701,51 +746,6 @@
         "padding_bottom": 60
       }
     },
-    "section_marquee_zRq6jc": {
-      "type": "section-marquee",
-      "blocks": {
-        "text_gUjXNW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>VALENTINE OFFER 25% OFF + DELIVERY</p>",
-            "text_color": "#ffffff",
-            "heading_highlight_type": "underline-hand-drawn",
-            "highlight_color": "#000",
-            "highlight_text_color": "",
-            "icon_name": "none",
-            "icon_color": "#d43747",
-            "icon_width": 25,
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text_gUjXNW"
-      ],
-      "name": "Marquee",
-      "settings": {
-        "layout": "marquee",
-        "show_top_border": false,
-        "show_bottom_border": false,
-        "padding": 10,
-        "marquee_speed": 100,
-        "direction": "ticker-ltr",
-        "slider_speed": 7,
-        "show_arrows": false,
-        "text_caps": false,
-        "type_style": "subheading-text",
-        "text_size": 120,
-        "letter_spacing": 0,
-        "message_spacing": 10,
-        "bg_color": "#d43747",
-        "gradient": "",
-        "color": "#000000",
-        "border_color": "#000",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "section_marquee_cULFQU": {
       "type": "section-marquee",
       "blocks": {
@@ -917,10 +917,10 @@
     "section_image_with_text_cENwFf",
     "ss_video_slider_4_FqzJHP",
     "section_multicolumn_9JBrTT",
+    "section_marquee_zRq6jc",
     "ss_comparison_table_2_kg9Xch",
     "related",
     "section_accordions_QgJwaJ",
-    "section_marquee_zRq6jc",
     "section_marquee_cULFQU",
     "section_icons_row_xMQ3qV",
     "section_video_WbdK33",
