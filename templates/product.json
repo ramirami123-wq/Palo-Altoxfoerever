@@ -162,132 +162,6 @@
         "padding_bottom": 60
       }
     },
-    "ss_comparison_table_2_kg9Xch": {
-      "type": "ss-comparison-table-2",
-      "blocks": {
-        "item_y7VPqK": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Lasts Forever",
-            "first_icon": "yes",
-            "second_icon": "no",
-            "third_icon": "yes"
-          }
-        },
-        "item_Rk6JNJ": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Do It Together",
-            "first_icon": "yes",
-            "second_icon": "no",
-            "third_icon": "yes"
-          }
-        },
-        "item_z9bDbL": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Under $60",
-            "first_icon": "yes",
-            "second_icon": "no",
-            "third_icon": "no"
-          }
-        },
-        "item_FdkCQ4": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Ready In Minutes",
-            "first_icon": "yes",
-            "second_icon": "no",
-            "third_icon": "no"
-          }
-        },
-        "item_P7PpHB": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Zero Skills Needed",
-            "first_icon": "yes",
-            "second_icon": "no",
-            "third_icon": "no"
-          }
-        },
-        "item_JkjiWF": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Actually Unique",
-            "first_icon": "yes",
-            "second_icon": "no",
-            "third_icon": "no"
-          }
-        }
-      },
-      "block_order": [
-        "item_y7VPqK",
-        "item_Rk6JNJ",
-        "item_z9bDbL",
-        "item_FdkCQ4",
-        "item_P7PpHB",
-        "item_JkjiWF"
-      ],
-      "name": "SS - Comparison Table #2",
-      "settings": {
-        "heading": "Why This Beats Every Other Valentine's Gift",
-        "heading_custom": true,
-        "heading_font": "poppins_n7",
-        "heading_size": 26,
-        "heading_height": 100,
-        "heading_align": "center",
-        "table_mt": 50,
-        "table_radius": 10,
-        "table_border_thickness": 3,
-        "table_column_active": "1",
-        "table_column_active_radius": 10,
-        "first_heading": "Foreverhands™",
-        "second_heading": "Traditional Gifts",
-        "third_heading": "",
-        "table_heading_custom": false,
-        "table_heading_font": "assistant_n4",
-        "table_heading_size": 24,
-        "table_heading_size_mobile": 10,
-        "table_heading_height": 100,
-        "table_heading_align": "center",
-        "table_heading_padding_horizontal": 20,
-        "table_heading_padding_horizontal_mobile": 4,
-        "table_heading_padding_vertical": 20,
-        "table_heading_padding_vertical_mobile": 10,
-        "table_row_padding_horizontal": 20,
-        "table_row_padding_horizontal_mobile": 4,
-        "table_row_padding_vertical": 20,
-        "table_row_padding_vertical_mobile": 10,
-        "table_row_heading_custom": false,
-        "table_row_heading_font": "assistant_n4",
-        "table_row_heading_size": 26,
-        "table_row_heading_size_mobile": 10,
-        "table_row_heading_height": 100,
-        "table_row_heading_align": "center",
-        "table_icon_size": 32,
-        "table_icon_size_mobile": 20,
-        "heading_color": "#d43747",
-        "table_border_color": "#D7D8D5",
-        "table_heading_color": "#162471",
-        "table_heading_active_color": "#FFFFFF",
-        "table_column_active_bg_color": "#d43747",
-        "table_row_heading_color": "#040200",
-        "table_icon_color": "#162471",
-        "table_icon_active_color": "#FFFFFF",
-        "background_color": "#F6F4F2",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 150,
-        "border_thickness": 0
-      }
-    },
     "section_image_with_text_cENwFf": {
       "type": "section-image-with-text",
       "disabled": true,
@@ -622,6 +496,132 @@
         "padding_bottom": 60
       }
     },
+    "ss_comparison_table_2_kg9Xch": {
+      "type": "ss-comparison-table-2",
+      "blocks": {
+        "item_y7VPqK": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Lasts Forever",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_Rk6JNJ": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Do It Together",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_z9bDbL": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Under $60",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_FdkCQ4": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Ready In Minutes",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_P7PpHB": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Zero Skills Needed",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_JkjiWF": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Actually Unique",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        }
+      },
+      "block_order": [
+        "item_y7VPqK",
+        "item_Rk6JNJ",
+        "item_z9bDbL",
+        "item_FdkCQ4",
+        "item_P7PpHB",
+        "item_JkjiWF"
+      ],
+      "name": "SS - Comparison Table #2",
+      "settings": {
+        "heading": "Why This Beats Every Other Valentine's Gift",
+        "heading_custom": true,
+        "heading_font": "poppins_n7",
+        "heading_size": 26,
+        "heading_height": 100,
+        "heading_align": "center",
+        "table_mt": 50,
+        "table_radius": 10,
+        "table_border_thickness": 3,
+        "table_column_active": "1",
+        "table_column_active_radius": 10,
+        "first_heading": "Foreverhands™",
+        "second_heading": "Traditional Gifts",
+        "third_heading": "",
+        "table_heading_custom": false,
+        "table_heading_font": "assistant_n4",
+        "table_heading_size": 24,
+        "table_heading_size_mobile": 10,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 20,
+        "table_heading_padding_horizontal_mobile": 4,
+        "table_heading_padding_vertical": 20,
+        "table_heading_padding_vertical_mobile": 10,
+        "table_row_padding_horizontal": 20,
+        "table_row_padding_horizontal_mobile": 4,
+        "table_row_padding_vertical": 20,
+        "table_row_padding_vertical_mobile": 10,
+        "table_row_heading_custom": false,
+        "table_row_heading_font": "assistant_n4",
+        "table_row_heading_size": 26,
+        "table_row_heading_size_mobile": 10,
+        "table_row_heading_height": 100,
+        "table_row_heading_align": "center",
+        "table_icon_size": 32,
+        "table_icon_size_mobile": 20,
+        "heading_color": "#d43747",
+        "table_border_color": "#d7d8d5",
+        "table_heading_color": "#162471",
+        "table_heading_active_color": "#ffffff",
+        "table_column_active_bg_color": "#d43747",
+        "table_row_heading_color": "#040200",
+        "table_icon_color": "#162471",
+        "table_icon_active_color": "#ffffff",
+        "background_color": "#f6f4f2",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 0
+      }
+    },
     "related": {
       "type": "related-products",
       "blocks": {
@@ -749,6 +749,77 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "section_icons_row_xMQ3qV": {
+      "type": "section-icons-row",
+      "blocks": {
+        "text_UmhQWJ": {
+          "type": "text",
+          "settings": {
+            "icon_name": "clock",
+            "title": "Done In One Date Night",
+            "text": "<p>60 minutes from box to finished sculpture. Fast to make, lasts forever.</p>"
+          }
+        },
+        "text_iGNEGD": {
+          "type": "text",
+          "settings": {
+            "icon_name": "award",
+            "title": "Zero Talent Required",
+            "text": "<p>If you can hold hands, you can do this. Foolproof instructions, perfect results.</p>"
+          }
+        },
+        "text_BNt7FT": {
+          "type": "text",
+          "settings": {
+            "icon_name": "eco-friendly",
+            "title": "Way More Meaningful Than Jewelry",
+            "text": "<p>You made it together. Captures your actual hands in this exact moment.</p>"
+          }
+        },
+        "text_iRTgDA": {
+          "type": "text",
+          "settings": {
+            "icon_name": "calendar",
+            "title": "Not Your Basic Valentine's Gift",
+            "text": "<p>While they're buying roses, you're creating art that'll be on the shelf in 10 years.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_UmhQWJ",
+        "text_iGNEGD",
+        "text_BNt7FT",
+        "text_iRTgDA"
+      ],
+      "custom_css": [
+        "h1,h2, {color: black;}"
+      ],
+      "name": "Icons row",
+      "settings": {
+        "heading": "Not Just A Gift—It's Literally An Experience",
+        "subheading": "<h6></h6><h6>While everyone else buys flowers that die by Monday, you're creating permanent art together—the hardest part is just deciding where to display it.</h6>",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 20,
+        "show_vertical_borders": false,
+        "show_horizontal_borders": false,
+        "heading_size": 100,
+        "text_size": 70,
+        "bg_color": "#ffffff",
+        "text_color": "#ffffff",
+        "box_color": "#d43747",
+        "color_border": "#333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -760,6 +831,7 @@
     "related",
     "section_accordions_QgJwaJ",
     "section_video_WbdK33",
-    "17660885504cc95c9a"
+    "17660885504cc95c9a",
+    "section_icons_row_xMQ3qV"
   ]
 }
