@@ -162,8 +162,135 @@
         "padding_bottom": 60
       }
     },
+    "ss_comparison_table_2_kg9Xch": {
+      "type": "ss-comparison-table-2",
+      "blocks": {
+        "item_y7VPqK": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Lasts Forever",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_Rk6JNJ": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Do It Together",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_z9bDbL": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Under $60",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_FdkCQ4": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Ready In Minutes",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_P7PpHB": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Zero Skills Needed",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_JkjiWF": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Actually Unique",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        }
+      },
+      "block_order": [
+        "item_y7VPqK",
+        "item_Rk6JNJ",
+        "item_z9bDbL",
+        "item_FdkCQ4",
+        "item_P7PpHB",
+        "item_JkjiWF"
+      ],
+      "name": "SS - Comparison Table #2",
+      "settings": {
+        "heading": "Why This Beats Every Other Valentine's Gift",
+        "heading_custom": true,
+        "heading_font": "poppins_n7",
+        "heading_size": 26,
+        "heading_height": 100,
+        "heading_align": "center",
+        "table_mt": 50,
+        "table_radius": 10,
+        "table_border_thickness": 3,
+        "table_column_active": "1",
+        "table_column_active_radius": 10,
+        "first_heading": "Foreverhands™",
+        "second_heading": "Traditional Gifts",
+        "third_heading": "",
+        "table_heading_custom": false,
+        "table_heading_font": "assistant_n4",
+        "table_heading_size": 24,
+        "table_heading_size_mobile": 10,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 20,
+        "table_heading_padding_horizontal_mobile": 4,
+        "table_heading_padding_vertical": 20,
+        "table_heading_padding_vertical_mobile": 10,
+        "table_row_padding_horizontal": 20,
+        "table_row_padding_horizontal_mobile": 4,
+        "table_row_padding_vertical": 20,
+        "table_row_padding_vertical_mobile": 10,
+        "table_row_heading_custom": false,
+        "table_row_heading_font": "assistant_n4",
+        "table_row_heading_size": 26,
+        "table_row_heading_size_mobile": 10,
+        "table_row_heading_height": 100,
+        "table_row_heading_align": "center",
+        "table_icon_size": 32,
+        "table_icon_size_mobile": 20,
+        "heading_color": "#d43747",
+        "table_border_color": "#D7D8D5",
+        "table_heading_color": "#162471",
+        "table_heading_active_color": "#FFFFFF",
+        "table_column_active_bg_color": "#d43747",
+        "table_row_heading_color": "#040200",
+        "table_icon_color": "#162471",
+        "table_icon_active_color": "#FFFFFF",
+        "background_color": "#F6F4F2",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 0
+      }
+    },
     "section_image_with_text_cENwFf": {
       "type": "section-image-with-text",
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "section_height": "six-fifty-height",
@@ -245,6 +372,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -254,6 +382,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -263,6 +392,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -272,6 +402,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -281,6 +412,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -290,6 +422,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -299,6 +432,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -308,6 +442,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "stars_count": 5,
             "author": "Author",
             "text": "<p>Text example</p>"
@@ -391,25 +526,25 @@
         "action_border_thickness": 1,
         "action_radius": 100,
         "arrow_color": "#121212",
-        "arrow_hover_color": "#FFFFFF",
-        "arrow_bg_color": "#FFFFFF",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "#ffffff",
         "arrow_bg_hover_color": "#121212",
         "arrow_border_color": "#121212",
         "arrow_border_hover_color": "#121212",
         "video_border_color": "#121212",
-        "stars_color": "#F6AF00",
-        "author_color": "#FFFFFF",
-        "checkmark_color": "#4C8AE7",
-        "text_color": "#FFFFFF",
-        "video_content_border_color": "#FFFFFF",
+        "stars_color": "#f6af00",
+        "author_color": "#ffffff",
+        "checkmark_color": "#4c8ae7",
+        "text_color": "#ffffff",
+        "video_content_border_color": "#ffffff",
         "action_color": "#000000",
-        "action_hover_color": "#FFFFFF",
-        "action_bg_color": "#FFFFFF",
-        "action_bg_hover_color": "#FFFFFF",
-        "action_border_color": "#FFFFFF",
-        "action_border_hover_color": "#FFFFFF",
+        "action_hover_color": "#ffffff",
+        "action_bg_color": "#ffffff",
+        "action_bg_hover_color": "#ffffff",
+        "action_border_color": "#ffffff",
+        "action_border_hover_color": "#ffffff",
         "background_style": "solid",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
         "border_color": "#121212",
         "margin_top": 0,
@@ -621,6 +756,7 @@
     "section_image_with_text_cENwFf",
     "ss_video_slider_4_FqzJHP",
     "section_multicolumn_9JBrTT",
+    "ss_comparison_table_2_kg9Xch",
     "related",
     "section_accordions_QgJwaJ",
     "section_video_WbdK33",
