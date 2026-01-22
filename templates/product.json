@@ -701,6 +701,167 @@
         "padding_bottom": 60
       }
     },
+    "section_marquee_zRq6jc": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_gUjXNW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>VALENTINE OFFER 25% OFF + DELIVERY</p>",
+            "text_color": "#ffffff",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "#d43747",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_gUjXNW"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 120,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#d43747",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_marquee_cULFQU": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_cdPNWd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>VALENTINE OFFER 25% OFF + DELIVERY</p>",
+            "text_color": "#ffffff",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "#d43747",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_cdPNWd"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 120,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#d43747",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_icons_row_xMQ3qV": {
+      "type": "section-icons-row",
+      "blocks": {
+        "text_UmhQWJ": {
+          "type": "text",
+          "settings": {
+            "icon_name": "clock",
+            "title": "Done In One Date Night",
+            "text": "<p>60 minutes from box to finished sculpture. Fast to make, lasts forever.</p>"
+          }
+        },
+        "text_iGNEGD": {
+          "type": "text",
+          "settings": {
+            "icon_name": "award",
+            "title": "Zero Talent Required",
+            "text": "<p>If you can hold hands, you can do this. Foolproof instructions, perfect results.</p>"
+          }
+        },
+        "text_BNt7FT": {
+          "type": "text",
+          "settings": {
+            "icon_name": "eco-friendly",
+            "title": "Way More Meaningful Than Jewelry",
+            "text": "<p>You made it together. Captures your actual hands in this exact moment.</p>"
+          }
+        },
+        "text_iRTgDA": {
+          "type": "text",
+          "settings": {
+            "icon_name": "calendar",
+            "title": "Not Your Basic Valentine's Gift",
+            "text": "<p>While they're buying roses, you're creating art that'll be on the shelf in 10 years.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_UmhQWJ",
+        "text_iGNEGD",
+        "text_BNt7FT",
+        "text_iRTgDA"
+      ],
+      "custom_css": [
+        "h1,h2 {color: black;}"
+      ],
+      "name": "Icons row",
+      "settings": {
+        "heading": "Not Just A Gift—It's Literally An Experience",
+        "subheading": "<h6></h6><h6>While everyone else buys flowers that die by Monday, you're creating permanent art together—the hardest part is just deciding where to display it.</h6>",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 20,
+        "show_vertical_borders": false,
+        "show_horizontal_borders": false,
+        "heading_size": 100,
+        "text_size": 70,
+        "bg_color": "#ffffff",
+        "text_color": "#ffffff",
+        "box_color": "#d43747",
+        "color_border": "#333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "section_video_WbdK33": {
       "type": "section-video",
       "name": "Video",
@@ -749,77 +910,6 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "section_icons_row_xMQ3qV": {
-      "type": "section-icons-row",
-      "blocks": {
-        "text_UmhQWJ": {
-          "type": "text",
-          "settings": {
-            "icon_name": "clock",
-            "title": "Done In One Date Night",
-            "text": "<p>60 minutes from box to finished sculpture. Fast to make, lasts forever.</p>"
-          }
-        },
-        "text_iGNEGD": {
-          "type": "text",
-          "settings": {
-            "icon_name": "award",
-            "title": "Zero Talent Required",
-            "text": "<p>If you can hold hands, you can do this. Foolproof instructions, perfect results.</p>"
-          }
-        },
-        "text_BNt7FT": {
-          "type": "text",
-          "settings": {
-            "icon_name": "eco-friendly",
-            "title": "Way More Meaningful Than Jewelry",
-            "text": "<p>You made it together. Captures your actual hands in this exact moment.</p>"
-          }
-        },
-        "text_iRTgDA": {
-          "type": "text",
-          "settings": {
-            "icon_name": "calendar",
-            "title": "Not Your Basic Valentine's Gift",
-            "text": "<p>While they're buying roses, you're creating art that'll be on the shelf in 10 years.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_UmhQWJ",
-        "text_iGNEGD",
-        "text_BNt7FT",
-        "text_iRTgDA"
-      ],
-      "custom_css": [
-        "h1,h2, {color: black;}"
-      ],
-      "name": "Icons row",
-      "settings": {
-        "heading": "Not Just A Gift—It's Literally An Experience",
-        "subheading": "<h6></h6><h6>While everyone else buys flowers that die by Monday, you're creating permanent art together—the hardest part is just deciding where to display it.</h6>",
-        "alignment": "center",
-        "columns": 3,
-        "icons_width": 20,
-        "show_vertical_borders": false,
-        "show_horizontal_borders": false,
-        "heading_size": 100,
-        "text_size": 70,
-        "bg_color": "#ffffff",
-        "text_color": "#ffffff",
-        "box_color": "#d43747",
-        "color_border": "#333",
-        "button_text": "",
-        "button_link": "",
-        "button_color": "btn--black",
-        "button_style": "btn--solid",
-        "button_size": "btn--small",
-        "layout_mobile": "grid",
-        "width": "wrapper",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
     }
   },
   "order": [
@@ -830,8 +920,10 @@
     "ss_comparison_table_2_kg9Xch",
     "related",
     "section_accordions_QgJwaJ",
+    "section_marquee_zRq6jc",
+    "section_marquee_cULFQU",
+    "section_icons_row_xMQ3qV",
     "section_video_WbdK33",
-    "17660885504cc95c9a",
-    "section_icons_row_xMQ3qV"
+    "17660885504cc95c9a"
   ]
 }
