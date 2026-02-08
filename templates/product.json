@@ -120,6 +120,16 @@
             "padding_bottom": 20
           }
         },
+        "product_accordion_aC9pGj": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "What does the box contain?",
+            "heading_style": "font-body",
+            "accordion_text": "<p><strong>  2x300 grams alginate powder</strong></p><p><strong>• 800 grams model gypsum</strong></p><p><strong>• Pouring bucket</strong></p><p><strong>• Special gloves</strong></p><p><strong>• Sanding sheets</strong></p><p><strong>• Cleaning tools</strong></p><p><strong>• Instruction book</strong></p>",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
         "product_accordion_hiKrDr": {
           "type": "product_accordion",
           "settings": {
@@ -153,6 +163,7 @@
         "custom_code_PdNTmD",
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
         "product_accordion_8DPBwX",
+        "product_accordion_aC9pGj",
         "product_accordion_hiKrDr",
         "seedgrow_whatsapp_chat_app_block_xqb6bH"
       ],
