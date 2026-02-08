@@ -11,6 +11,47 @@
   "type": "header",
   "name": "Header",
   "sections": {
+    "ss_countdown_bar_4FU7EM": {
+      "type": "ss-countdown-bar",
+      "blocks": {
+        "text_iYHYfG": {
+          "type": "text",
+          "settings": {
+            "heading": "Mothers day sale! 70% OFF ends in:",
+            "color": "#ffffff",
+            "font_size": 24
+          }
+        },
+        "timer_Y69UVb": {
+          "type": "timer",
+          "settings": {
+            "year": "2027",
+            "month": "02",
+            "day": "14",
+            "hour": "00",
+            "minute": "00",
+            "hide_timer_on_completed": false,
+            "color": "#FFFFFF",
+            "font_size_number": 20,
+            "font_size_text": 10
+          }
+        }
+      },
+      "block_order": [
+        "text_iYHYfG",
+        "timer_Y69UVb"
+      ],
+      "name": "SS - Countdown timer bar",
+      "settings": {
+        "target_selector": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper, .onboarding-header",
+        "use_cross": false,
+        "days_text": "Days",
+        "hours_text": "Hrs",
+        "mins_text": "Mins",
+        "seconds_text": "Secs",
+        "background-color": "#d02e2e"
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -140,52 +181,11 @@
         "header_text_color": "white",
         "header_gradient": true
       }
-    },
-    "ss_countdown_bar_4FU7EM": {
-      "type": "ss-countdown-bar",
-      "blocks": {
-        "text_iYHYfG": {
-          "type": "text",
-          "settings": {
-            "heading": "Mothers day sale! 70% OFF ends in:",
-            "color": "#ffffff",
-            "font_size": 24
-          }
-        },
-        "timer_Y69UVb": {
-          "type": "timer",
-          "settings": {
-            "year": "2027",
-            "month": "02",
-            "day": "14",
-            "hour": "00",
-            "minute": "00",
-            "hide_timer_on_completed": false,
-            "color": "#FFFFFF",
-            "font_size_number": 20,
-            "font_size_text": 10
-          }
-        }
-      },
-      "block_order": [
-        "text_iYHYfG",
-        "timer_Y69UVb"
-      ],
-      "name": "SS - Countdown timer bar",
-      "settings": {
-        "target_selector": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper, .onboarding-header",
-        "use_cross": false,
-        "days_text": "Days",
-        "hours_text": "Hrs",
-        "mins_text": "Mins",
-        "seconds_text": "Secs",
-        "background-color": "#d02e2e"
-      }
     }
   },
   "order": [
+    "ss_countdown_bar_4FU7EM",
     "announcement-bar",
-    "header",
-    "ss_countdown_bar_4FU7EM"
+    "header"
   ]
 }
