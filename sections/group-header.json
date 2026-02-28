@@ -37,6 +37,7 @@
       "block_order": [
         "announcement-0"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--full",
         "layout": "marquee",
@@ -141,10 +142,10 @@
         "header_gradient": true
       }
     },
-    "ss_countdown_bar_qMXi3G": {
+    "ss_countdown_bar_XTeRhQ": {
       "type": "ss-countdown-bar",
       "blocks": {
-        "text_mVJPp4": {
+        "text_recdhj": {
           "type": "text",
           "settings": {
             "heading": "Mothers day sale! 70% OFF ends in:",
@@ -152,15 +153,15 @@
             "font_size": 24
           }
         },
-        "timer_hEKkmz": {
+        "timer_rCnkNi": {
           "type": "timer",
           "settings": {
             "year": "2026",
-            "month": "09",
-            "day": "02",
-            "hour": "00",
-            "minute": "00",
-            "hide_timer_on_completed": true,
+            "month": "08",
+            "day": "01",
+            "hour": "10",
+            "minute": "15",
+            "hide_timer_on_completed": false,
             "color": "#FFFFFF",
             "font_size_number": 20,
             "font_size_text": 10
@@ -168,8 +169,8 @@
         }
       },
       "block_order": [
-        "text_mVJPp4",
-        "timer_hEKkmz"
+        "text_recdhj",
+        "timer_rCnkNi"
       ],
       "name": "SS - Countdown timer bar",
       "settings": {
@@ -186,6 +187,6 @@
   "order": [
     "announcement-bar",
     "header",
-    "ss_countdown_bar_qMXi3G"
+    "ss_countdown_bar_XTeRhQ"
   ]
 }
