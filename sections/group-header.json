@@ -160,7 +160,7 @@
             "day": "02",
             "hour": "00",
             "minute": "00",
-            "hide_timer_on_completed": false,
+            "hide_timer_on_completed": true,
             "color": "#FFFFFF",
             "font_size_number": 20,
             "font_size_text": 10
