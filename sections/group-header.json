@@ -140,10 +140,62 @@
         "header_text_color": "white",
         "header_gradient": true
       }
+    },
+    "17723108785f7beeb4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8debff7_fqL99Q": {
+          "type": "ai_gen_block_8debff7",
+          "settings": {
+            "end_date": "2026-12-31",
+            "end_time": "",
+            "show_hours": true,
+            "show_minutes": true,
+            "show_seconds": true,
+            "heading": "Limited time offer",
+            "subheading": "Hurry! Sale ends soon",
+            "expired_message": "This offer has ended",
+            "hours_label": "Hours",
+            "minutes_label": "Minutes",
+            "seconds_label": "Seconds",
+            "desktop_width_percent": 100,
+            "padding": 10,
+            "gap": 20,
+            "text_spacing": 5,
+            "background_color": "#fff7f2",
+            "heading_color": "#0b0b0b",
+            "text_color": "#0b0b0b",
+            "heading_size": 14,
+            "subheading_size": 10,
+            "box_size": 40,
+            "box_padding": 5,
+            "box_spacing": 5,
+            "box_background_color": "#ffffff",
+            "show_rounded_corners": true,
+            "border_radius": 5,
+            "box_border_radius": 5,
+            "show_box_border": false,
+            "box_border_width": 2,
+            "box_border_color": "#000000",
+            "number_size": 16,
+            "number_color": "#0b0b0b",
+            "label_size": 8,
+            "label_color": "#0b0b0b",
+            "label_uppercase": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8debff7_fqL99Q"
+      ],
+      "disabled": true,
+      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "17723108785f7beeb4"
   ]
 }
