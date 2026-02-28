@@ -1,6 +1,534 @@
+{% doc %}
+  @prompt
+    countdown timer, make it small size, texts aligned, not big size, smaller texts, only hrs and mins and secs, without days, and make the section height more smaller
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-countdown-timer-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {% if block.settings.show_rounded_corners %}{{ block.settings.border_radius }}px{% else %}0{% endif %};
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-countdown-timer__heading-{{ ai_gen_id }} {
+    margin: 0 0 {{ block.settings.spacing }}px;
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+  }
+
+  .ai-countdown-timer__subheading-{{ ai_gen_id }} {
+    margin: 0 0 {{ block.settings.spacing }}px;
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.subheading_size }}px;
+  }
+
+  .ai-countdown-timer__display-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: {{ block.settings.text_alignment }};
+    gap: {{ block.settings.box_spacing }}px;
+    flex-wrap: wrap;
+  }
+
+  .ai-countdown-timer__box-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: {{ block.settings.box_size }}px;
+    padding: {{ block.settings.box_padding }}px;
+    background-color: {{ block.settings.box_background_color }};
+    border-radius: {% if block.settings.show_rounded_corners %}{{ block.settings.box_border_radius }}px{% else %}0{% endif %};
+    {% if block.settings.show_box_border %}
+      border: {{ block.settings.box_border_width }}px solid {{ block.settings.box_border_color }};
+    {% endif %}
+  }
+
+  .ai-countdown-timer__number-{{ ai_gen_id }} {
+    font-size: {{ block.settings.number_size }}px;
+    font-weight: bold;
+    color: {{ block.settings.number_color }};
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .ai-countdown-timer__label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.label_size }}px;
+    color: {{ block.settings.label_color }};
+    {% if block.settings.label_uppercase %}
+      text-transform: uppercase;
+    {% endif %}
+    letter-spacing: 0.05em;
+  }
+
+  .ai-countdown-timer__expired-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.subheading_size }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-countdown-timer__box-{{ ai_gen_id }} {
+      min-width: {{ block.settings.box_size | times: 0.8 }}px;
+      padding: {{ block.settings.box_padding | times: 0.8 }}px;
+    }
+
+    .ai-countdown-timer__number-{{ ai_gen_id }} {
+      font-size: {{ block.settings.number_size | times: 0.8 }}px;
+    }
+
+    .ai-countdown-timer__label-{{ ai_gen_id }} {
+      font-size: {{ block.settings.label_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<countdown-timer-{{ ai_gen_id }}
+  class="ai-countdown-timer-{{ ai_gen_id }}"
+  data-end-date="{{ block.settings.end_date }}"
+  data-end-time="{{ block.settings.end_time }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.heading != blank %}
+    <h2 class="ai-countdown-timer__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+  {% endif %}
+
+  {% if block.settings.subheading != blank %}
+    <div class="ai-countdown-timer__subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</div>
+  {% endif %}
+
+  <div class="ai-countdown-timer__display-{{ ai_gen_id }}">
+    {% if block.settings.show_hours %}
+      <div class="ai-countdown-timer__box-{{ ai_gen_id }}">
+        <div class="ai-countdown-timer__number-{{ ai_gen_id }}" data-hours>00</div>
+        <div class="ai-countdown-timer__label-{{ ai_gen_id }}">{{ block.settings.hours_label }}</div>
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_minutes %}
+      <div class="ai-countdown-timer__box-{{ ai_gen_id }}">
+        <div class="ai-countdown-timer__number-{{ ai_gen_id }}" data-minutes>00</div>
+        <div class="ai-countdown-timer__label-{{ ai_gen_id }}">{{ block.settings.minutes_label }}</div>
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_seconds %}
+      <div class="ai-countdown-timer__box-{{ ai_gen_id }}">
+        <div class="ai-countdown-timer__number-{{ ai_gen_id }}" data-seconds>00</div>
+        <div class="ai-countdown-timer__label-{{ ai_gen_id }}">{{ block.settings.seconds_label }}</div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="ai-countdown-timer__expired-{{ ai_gen_id }}" style="display: none;" data-expired>
+    {{ block.settings.expired_message }}
+  </div>
+</countdown-timer-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CountdownTimer{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.endDate = this.dataset.endDate;
+        this.endTime = this.dataset.endTime;
+        this.hoursEl = this.querySelector('[data-hours]');
+        this.minutesEl = this.querySelector('[data-minutes]');
+        this.secondsEl = this.querySelector('[data-seconds]');
+        this.expiredEl = this.querySelector('[data-expired]');
+        this.displayEl = this.querySelector('.ai-countdown-timer__display-{{ ai_gen_id }}');
+        this.interval = null;
+      }
+
+      connectedCallback() {
+        if (!this.endDate) {
+          this.showExpired();
+          return;
+        }
+
+        this.startCountdown();
+      }
+
+      disconnectedCallback() {
+        if (this.interval) {
+          clearInterval(this.interval);
+        }
+      }
+
+      startCountdown() {
+        this.updateCountdown();
+        this.interval = setInterval(() => {
+          this.updateCountdown();
+        }, 1000);
+      }
+
+      updateCountdown() {
+        const endDateTime = this.getEndDateTime();
+        const now = new Date().getTime();
+        const distance = endDateTime - now;
+
+        if (distance < 0) {
+          this.showExpired();
+          return;
+        }
+
+        const totalHours = Math.floor(distance / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if (this.hoursEl) this.hoursEl.textContent = this.padZero(totalHours);
+        if (this.minutesEl) this.minutesEl.textContent = this.padZero(minutes);
+        if (this.secondsEl) this.secondsEl.textContent = this.padZero(seconds);
+      }
+
+      getEndDateTime() {
+        let dateTimeString = this.endDate;
+        if (this.endTime) {
+          dateTimeString += ' ' + this.endTime;
+        } else {
+          dateTimeString += ' 23:59:59';
+        }
+        return new Date(dateTimeString).getTime();
+      }
+
+      padZero(num) {
+        return num.toString().padStart(2, '0');
+      }
+
+      showExpired() {
+        if (this.interval) {
+          clearInterval(this.interval);
+        }
+        if (this.displayEl) {
+          this.displayEl.style.display = 'none';
+        }
+        if (this.expiredEl) {
+          this.expiredEl.style.display = 'block';
+        }
+      }
+    }
+
+    customElements.define('countdown-timer-{{ ai_gen_id }}', CountdownTimer{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Countdown timer",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Timer settings"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "End date",
+      "info": "Format: YYYY-MM-DD (e.g., 2026-12-31)",
+      "default": "2026-12-31"
+    },
+    {
+      "type": "text",
+      "id": "end_time",
+      "label": "End time",
+      "info": "Format: HH:MM:SS (e.g., 23:59:59). Leave blank for end of day"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hours",
+      "label": "Show hours",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_minutes",
+      "label": "Show minutes",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_seconds",
+      "label": "Show seconds",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Limited time offer"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Hurry! Sale ends soon"
+    },
+    {
+      "type": "text",
+      "id": "expired_message",
+      "label": "Expired message",
+      "default": "This offer has ended"
+    },
+    {
+      "type": "text",
+      "id": "hours_label",
+      "label": "Hours label",
+      "default": "Hours"
+    },
+    {
+      "type": "text",
+      "id": "minutes_label",
+      "label": "Minutes label",
+      "default": "Minutes"
+    },
+    {
+      "type": "text",
+      "id": "seconds_label",
+      "label": "Seconds label",
+      "default": "Seconds"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "spacing",
+      "label": "Spacing between elements",
+      "min": 0,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#fff7f2"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#0b0b0b"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#0b0b0b"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "label": "Subheading size",
+      "min": 10,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Timer boxes"
+    },
+    {
+      "type": "range",
+      "id": "box_size",
+      "label": "Box minimum width",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "box_padding",
+      "label": "Box padding",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "box_spacing",
+      "label": "Space between boxes",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "box_background_color",
+      "label": "Box background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rounded_corners",
+      "label": "Show rounded corners",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Container border radius",
+      "min": 0,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "box_border_radius",
+      "label": "Box border radius",
+      "min": 0,
+      "max": 20,
+      "step": 5,
+      "unit": "px",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "show_box_border",
+      "label": "Show box border",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "box_border_width",
+      "label": "Box border width",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "color",
+      "id": "box_border_color",
+      "label": "Box border color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Timer numbers and labels"
+    },
+    {
+      "type": "range",
+      "id": "number_size",
+      "label": "Number size",
+      "min": 16,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "number_color",
+      "label": "Number color",
+      "default": "#0b0b0b"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Label size",
+      "min": 8,
+      "max": 18,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label color",
+      "default": "#0b0b0b"
+    },
+    {
+      "type": "checkbox",
+      "id": "label_uppercase",
+      "label": "Uppercase labels",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown timer"
+    }
+  ]
+}
 {% endschema %}
