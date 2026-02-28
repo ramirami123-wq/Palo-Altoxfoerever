@@ -89,26 +89,6 @@
             "text_color": "#000000",
             "padding_bottom": 20
           }
-        },
-        "product_accordion_8DPBwX": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "What does the box contain?",
-            "heading_style": "font-body",
-            "accordion_text": "<p><strong>  2x300 grams alginate powder</strong></p><p><strong>• 800 grams model gypsum</strong></p><p><strong>• Pouring bucket</strong></p><p><strong>• Special gloves</strong></p><p><strong>• Sanding sheets</strong></p><p><strong>• Cleaning tools</strong></p><p><strong>• Instruction book</strong></p>",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "product_accordion_hiKrDr": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "What is the delivery time?",
-            "heading_style": "font-body",
-            "accordion_text": "<p>Usually the shipping time is 2-3 days. We are giving our best to delivery as soon as possible.</p>",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
         }
       },
       "block_order": [
@@ -119,9 +99,7 @@
         "upsell",
         "form",
         "description",
-        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
-        "product_accordion_8DPBwX",
-        "product_accordion_hiKrDr"
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9"
       ],
       "settings": {
         "product_sticky_enable": true,
