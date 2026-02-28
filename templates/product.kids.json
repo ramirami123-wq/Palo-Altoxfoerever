@@ -89,6 +89,26 @@
             "text_color": "#000000",
             "padding_bottom": 20
           }
+        },
+        "product_accordion_4X9beR": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "How it works",
+            "heading_style": "font-body",
+            "accordion_text": "<p><strong>1. Place Your Order</strong></p><p>Simply add to cart and check out — your kit ships fast with <strong>delivery all over Lebanon</strong>.</p><p><strong>2. Receive Your Kit</strong></p><p>You’ll get everything you need in a beautifully packaged box — including molding powder, casting materials, a display frame, and step-by-step instructions.</p><p><strong>3. Make the Mold</strong></p><p>Mix the molding powder and gently dip your baby’s hand or foot. It sets in just minutes!</p><p><strong>4. Create the Cast</strong></p><p>Pour in the casting mix to form the perfect 3D replica of your little one’s features.</p><p><strong>5. Frame Your Keepsake</strong></p><p>Once dry, place the finished casts into the included shadow box frame. Add the engraved plaque — and cherish it forever.</p>",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_UMizcP": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Frame Sizing",
+            "heading_style": "font-body",
+            "accordion_text": "<p><strong>Framed 2 Cast:</strong><br/><br/>7.87″ × 7.87″ (20 cm × 20 cm)</p><p><strong>Framed 4 Cast:</strong><br/><br/>11.81″ × 7.87″ (30 cm × 20 cm)</p>",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
         }
       },
       "block_order": [
@@ -99,7 +119,9 @@
         "upsell",
         "form",
         "description",
-        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9"
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
+        "product_accordion_4X9beR",
+        "product_accordion_UMizcP"
       ],
       "settings": {
         "product_sticky_enable": true,
